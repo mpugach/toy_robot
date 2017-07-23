@@ -1,28 +1,29 @@
 # ToyRobot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/toy_robot`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is yet another solution for a code puzzle provided by Jon Eaves.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Execute:
 
-```ruby
-gem 'toy_robot'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install toy_robot
+    $ gem install specific_install
+    $ gem specific_install -l https://github.com/mpugach/toy_robot
 
 ## Usage
 
-TODO: Write usage instructions here
+Execute:
+
+    $ toy_robot
+
+Supported input:
+
+    PLACE 0,0,NORTH
+    MOVE
+    LEFT
+    RIGHT
+    REPORT
+
+The tabletop is square, of dimensions 5 units x 5 units.
 
 ## Development
 
