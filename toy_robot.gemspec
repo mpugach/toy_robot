@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["pugach.m@gmail.com"]
 
   spec.summary       = %q{Yet another toy robot}
-  spec.description   = %q{A solution of code puzzle by Jon Eaves}
+  spec.description   = %q{Maksym Pugach's solution for a code puzzle provided by Jon Eaves}
   spec.homepage      = "https://github.com/mpugach/toy_robot"
 
   if spec.respond_to?(:metadata)
