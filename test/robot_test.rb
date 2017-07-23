@@ -107,4 +107,20 @@ describe ToyRobot::Robot do
       assert_output("0,0,SOUTH\n") { @robot.report }
     end
   end
+
+  describe "rotations" do
+    before do
+      @robot.place("0", "0", "north")
+    end
+
+    describe "#right" do
+      def test_it_turns_right
+        ToyRobot::Robot::DIRECTIONS.keys.rotate.each do |direction|
+          @robot.right
+
+          assert_output("0,0,#{direction.upcase}\n") { @robot.report }
+        end
+      end
+    end
+  end
 end

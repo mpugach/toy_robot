@@ -5,9 +5,9 @@ module ToyRobot
 
     DIRECTIONS = {
       north: { x:  1, y:  0 },
-      west:  { x:  0, y: -1 },
+      east:  { x:  0, y:  1 },
       south: { x: -1, y:  0 },
-      east:  { x:  0, y:  1 }
+      west:  { x:  0, y: -1 }
     }
 
     COMMANDS = %w[place move report left right]
@@ -74,7 +74,7 @@ module ToyRobot
 
     def rotate(rotation_direction)
       directions = DIRECTIONS.keys
-      new_index = directions.index(facing) + (rotation_direction == :right ? -1 : 1)
+      new_index = directions.index(facing) + (rotation_direction == :right ? 1 : -1)
 
       directions[new_index] || directions[0]
     end
