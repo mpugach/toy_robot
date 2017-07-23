@@ -122,5 +122,15 @@ describe ToyRobot::Robot do
         end
       end
     end
+
+    describe "#left" do
+      def test_it_turns_left
+        ToyRobot::Robot::DIRECTIONS.keys.reverse.each do |direction|
+          @robot.left
+
+          assert_output("0,0,#{direction.upcase}\n") { @robot.report }
+        end
+      end
+    end
   end
 end
