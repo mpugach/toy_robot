@@ -1,7 +1,7 @@
 # ToyRobot
 [![Build Status](https://travis-ci.org/mpugach/toy_robot.svg?branch=master)](https://travis-ci.org/mpugach/toy_robot)
 
-This is yet another solution for a code puzzle provided by Jon Eaves.
+This is yet another solution for a Toy Robot coding puzzle. The puzzle was provided by Jon Eaves.
 
 ## Installation
 
