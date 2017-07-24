@@ -3,4 +3,4 @@ require "toy_robot"
 
 require "minitest/autorun"
 require 'minitest/pride'
-require 'minitest/hell'
+require 'mocha/mini_test'
